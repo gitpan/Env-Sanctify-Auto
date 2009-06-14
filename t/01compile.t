@@ -1,0 +1,23 @@
+#!/usr/bin/perl -T
+
+# t/01compile.t
+#  Check that the module can be compiled and loaded properly.
+#
+# By Jonathan Yu <frequency@cpan.org>, 2009. All rights reversed.
+#
+# $Id: 01compile.t 7516 2009-06-14 01:28:51Z FREQUENCY@cpan.org $
+#
+# All rights to this test script are hereby disclaimed and its contents
+# released into the public domain by the author. Where this is not possible,
+# you may use this file under the same terms as Perl itself.
+
+use strict;
+use warnings;
+
+use Test::More tests => 2;
+use Test::NoWarnings; # 1 test
+
+# Check that we can load the module
+BEGIN {
+  use_ok('Env::Sanctify::Auto'); # 1 test
+}

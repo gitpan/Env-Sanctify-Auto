@@ -1,0 +1,54 @@
+2009-06-14  Jonathan Yu <frequency@cpan.org>
+
+	- Added an example, added to MANIFEST
+	- Added Env::Sanctify dependency to Build.PL and META.yml
+
+2009-06-14  Jonathan Yu <frequency@cpan.org>
+
+	- Added limitation wrt not having a VMS machine
+
+2009-06-14  Jonathan Yu <frequency@cpan.org>
+
+	- Test that defaults are set properly.
+	- Changed $^O = 'MSWin32' to detect Win32
+
+2009-06-13  Jonathan Yu <frequency@cpan.org>
+
+	- Fix core tests (make sure Env::Sanctify is fully destroyed/undefined before setting a new one)
+	- Restore old behaviour of explicitly using Env::Sanctify object as a base, rather than $class->SUPER::sanctify...
+
+2009-06-13  Jonathan Yu <frequency@cpan.org>
+
+	Changed around code to hopefully get subclassing to work
+
+2009-06-13  Jonathan Yu <frequency@cpan.org>
+
+	Added core tests & exception testing to improve coverage
+
+2009-06-13  Jonathan Yu <frequency@cpan.org>
+
+	Added README and META.yml to MANIFEST
+
+2009-06-13  Jonathan Yu <frequency@cpan.org>
+
+	Added basic META.yml
+
+2009-06-13  Jonathan Yu <frequency@cpan.org>
+
+	Set svn:keywords
+
+2009-06-13  Jonathan Yu <frequency@cpan.org>
+
+	Some minor changes. Re-bless the package into Env::Sanctify::Auto
+
+2009-06-13  Jonathan Yu <frequency@cpan.org>
+
+	Initial commit of new module
+
+2009-06-13  Jonathan Yu <frequency@cpan.org>
+
+	Added Env-Sanctify-Auto
+
+;; Local Variables:
+;; coding: utf-8
+;; End:
