@@ -1,3 +1,23 @@
+2009-06-16  Jonathan Yu <frequency@cpan.org>
+
+	Bumped version to 1.0.1
+
+2009-06-16  Jonathan Yu <frequency@cpan.org>
+
+	Add test coverage information
+
+2009-06-16  Jonathan Yu <frequency@cpan.org>
+
+	Fix Test::DistManifest test script so that it doesn't depend on it
+
+2009-06-15  Jonathan Yu <frequency@cpan.org>
+
+	Minor POD fix
+
+2009-06-14  Jonathan Yu <frequency@cpan.org>
+
+	Updated perlcriticrc
+
 2009-06-14  Jonathan Yu <frequency@cpan.org>
 
 	- Added an example, added to MANIFEST

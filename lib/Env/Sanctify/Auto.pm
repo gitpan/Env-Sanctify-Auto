@@ -1,7 +1,7 @@
 # Env::Sanctify::Auto
 #  Automatically cleans up your environment to prevent security issues.
 #
-# $Id: Auto.pm 7524 2009-06-14 15:51:29Z FREQUENCY@cpan.org $
+# $Id: Auto.pm 7567 2009-06-16 05:49:34Z FREQUENCY@cpan.org $
 #
 # Copyright (C) 2009 by Jonathan Yu <frequency@cpan.org>
 #
@@ -22,11 +22,11 @@ Env::Sanctify::Auto - Automatically clean up your %ENV
 
 =head1 VERSION
 
-Version 1.0 ($Id: Auto.pm 7524 2009-06-14 15:51:29Z FREQUENCY@cpan.org $)
+Version 1.0.1 ($Id: Auto.pm 7567 2009-06-16 05:49:34Z FREQUENCY@cpan.org $)
 
 =cut
 
-use version; our $VERSION = qv('1.0');
+use version; our $VERSION = qv('1.0.1');
 
 =head1 DESCRIPTION
 
@@ -97,7 +97,7 @@ B<IFS> is the Internal Field Separator, which tells the operating system
 what characters should be considered whitespace separating command line
 arguments. Combined with controlling B<PATH>, this exposes a very dangerous
 vulnerability: if the IFS is set to '/', then C<system('/bin/more')> is
-essentially the same as <system('bin more')>. As a result, the 'bin' command
+essentially the same as C<system('bin more')>. As a result, the 'bin' command
 is executed instead of '/bin/more' as expected.
 
 =head2 ENV and BASH_ENV
@@ -281,6 +281,15 @@ is currently nothing here to deal with that. If you have a OpenVMS machine
 or know how they work, feel free to send me an e-mail or patch.
 
 =back
+
+=head1 QUALITY ASSURANCE METRICS
+
+=head2 TEST COVERAGE
+
+  ------------------------- ------ ------ ------ ------ ------ ------
+  File                      stmt   bran   cond    sub    pod   total
+  ------------------------- ------ ------ ------ ------ ------ ------
+  Env/Sanctify/Auto.pm      100.0  100.0  100.0  100.0  100.0  100.0
 
 =head1 LICENSE
 
