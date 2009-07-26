@@ -1,3 +1,22 @@
+2009-07-25  Jonathan Yu <frequency@cpan.org>
+
+	Fix description
+
+2009-07-25  Jonathan Yu <frequency@cpan.org>
+
+	- Bump to version 1.0.2
+	- Various POD updates
+	- Overhaul test scripts, remove author tests from Recommends (Alias' journal #5375)
+	- No longer test Perl::Critic during AUTOMATED_TESTING, only RELEASE_TESTING. Thanks to Elliot Shank for the discussion in a private mail.
+
+2009-07-22  Jonathan Yu <frequency@cpan.org>
+
+	Require Internet (TEST_INTERNET) to do the signature test, since it tries to download the key from a keyserver
+
+2009-06-20  Jonathan Yu <frequency@cpan.org>
+
+	Removed a file carried over from Test::DistManifest, which I copied the base structure from (CIRCULAR.SKIP) and updated MANIFEST accordingly
+
 2009-06-16  Jonathan Yu <frequency@cpan.org>
 
 	Bumped version to 1.0.1

@@ -1,6 +1,6 @@
 # Perl::Critic resource file
 #
-# $Id: 01critic.rc 7529 2009-06-14 17:04:38Z FREQUENCY@cpan.org $
+# $Id: 01critic.rc 8217 2009-07-25 22:35:54Z FREQUENCY@cpan.org $
 #
 # By Jonathan Yu <frequency@cpan.org>, 2009. All rights reversed.
 #
@@ -72,6 +72,9 @@ script_sections = NAME|DESCRIPTION|SYNOPSIS|AUTHOR|LICENSE
 # This restriction is silly; some measure of performance gain is not worth
 # isolating the documentation from the code it documents.
 [-Documentation::RequirePodAtEnd]
+
+# This causes spurious failures due to its poor handling of taint mode.
+[-Documentation::PodSpelling]
 
 # Ensure that each file is tagged with an Id
 [Miscellanea::RequireRcsKeywords]
