@@ -3,7 +3,7 @@
 # t/03defaults.t
 #  Tests that defaults are set properly per operating system
 #
-# $Id: 03defaults.t 8217 2009-07-25 22:35:54Z FREQUENCY@cpan.org $
+# $Id: 03defaults.t 8622 2009-08-18 04:46:41Z FREQUENCY@cpan.org $
 
 use strict;
 use warnings;

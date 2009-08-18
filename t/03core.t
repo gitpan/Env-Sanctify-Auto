@@ -3,7 +3,7 @@
 # t/02core.t
 #  Tests core functionality
 #
-# $Id: 02core.t 8217 2009-07-25 22:35:54Z FREQUENCY@cpan.org $
+# $Id: 03core.t 8277 2009-07-29 02:54:25Z FREQUENCY@cpan.org $
 
 use strict;
 use warnings;

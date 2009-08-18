@@ -1,9 +1,9 @@
 #!/usr/bin/perl -T
 
-# t/01portability.t
+# t/99portability.t
 #  Tests if the distribution seems to be portable
 #
-# $Id: 01portability.t 8217 2009-07-25 22:35:54Z FREQUENCY@cpan.org $
+# $Id: 99portability.t 8277 2009-07-29 02:54:25Z FREQUENCY@cpan.org $
 
 use strict;
 use warnings;

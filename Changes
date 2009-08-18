@@ -1,93 +1,31 @@
-2009-07-25  Jonathan Yu <frequency@cpan.org>
+1.001 - 18 Aug 2009 - Jonathan Yu <frequency@cpan.org>
 
-	Fix description
+  + Use a simple string version, per David Golden's article:
+    http://www.dagolden.com/index.php/369/version-numbers-should-be-boring/
+  + No longer use Perl::Critic to test
+  + Resequenced test files
 
-2009-07-25  Jonathan Yu <frequency@cpan.org>
+1.0.2 - 15 Jun 2009 - Jonathan Yu <frequency@cpan.org>
 
-	- Bump to version 1.0.2
-	- Various POD updates
-	- Overhaul test scripts, remove author tests from Recommends (Alias' journal #5375)
-	- No longer test Perl::Critic during AUTOMATED_TESTING, only RELEASE_TESTING. Thanks to Elliot Shank for the discussion in a private mail.
+  + Fix description
+  + Overhaul test scripts, remove author tests from
+    Recommends (Alias' journal #5375)
+  + No longer test Perl::Critic during AUTOMATED_TESTING,
+    only RELEASE_TESTING. Thanks to Elliot Shank for the
+    discussion in a private mail.
+  + Require Internet (HAS_INTERNET) to do the signature
+    test, since it tries to download the key from a keyserver
+  + Removed a file carried over from Test::DistManifest,
+    which I copied the base structure from (CIRCULAR.SKIP)
+    and updated MANIFEST accordingly
 
-2009-07-22  Jonathan Yu <frequency@cpan.org>
+1.0.1 - 15 Jun 2009 - Jonathan Yu <frequency@cpan.org>
 
-	Require Internet (TEST_INTERNET) to do the signature test, since it tries to download the key from a keyserver
+  + Add test coverage information
+  + Fix Test::DistManifest test script so that it
+    doesn't depend on it
+  + Updated perlcriticrc
 
-2009-06-20  Jonathan Yu <frequency@cpan.org>
+1.0 - 14 Jun 2009 - Jonathan Yu <frequency@cpan.org>
 
-	Removed a file carried over from Test::DistManifest, which I copied the base structure from (CIRCULAR.SKIP) and updated MANIFEST accordingly
-
-2009-06-16  Jonathan Yu <frequency@cpan.org>
-
-	Bumped version to 1.0.1
-
-2009-06-16  Jonathan Yu <frequency@cpan.org>
-
-	Add test coverage information
-
-2009-06-16  Jonathan Yu <frequency@cpan.org>
-
-	Fix Test::DistManifest test script so that it doesn't depend on it
-
-2009-06-15  Jonathan Yu <frequency@cpan.org>
-
-	Minor POD fix
-
-2009-06-14  Jonathan Yu <frequency@cpan.org>
-
-	Updated perlcriticrc
-
-2009-06-14  Jonathan Yu <frequency@cpan.org>
-
-	- Added an example, added to MANIFEST
-	- Added Env::Sanctify dependency to Build.PL and META.yml
-
-2009-06-14  Jonathan Yu <frequency@cpan.org>
-
-	- Added limitation wrt not having a VMS machine
-
-2009-06-14  Jonathan Yu <frequency@cpan.org>
-
-	- Test that defaults are set properly.
-	- Changed $^O = 'MSWin32' to detect Win32
-
-2009-06-13  Jonathan Yu <frequency@cpan.org>
-
-	- Fix core tests (make sure Env::Sanctify is fully destroyed/undefined before setting a new one)
-	- Restore old behaviour of explicitly using Env::Sanctify object as a base, rather than $class->SUPER::sanctify...
-
-2009-06-13  Jonathan Yu <frequency@cpan.org>
-
-	Changed around code to hopefully get subclassing to work
-
-2009-06-13  Jonathan Yu <frequency@cpan.org>
-
-	Added core tests & exception testing to improve coverage
-
-2009-06-13  Jonathan Yu <frequency@cpan.org>
-
-	Added README and META.yml to MANIFEST
-
-2009-06-13  Jonathan Yu <frequency@cpan.org>
-
-	Added basic META.yml
-
-2009-06-13  Jonathan Yu <frequency@cpan.org>
-
-	Set svn:keywords
-
-2009-06-13  Jonathan Yu <frequency@cpan.org>
-
-	Some minor changes. Re-bless the package into Env::Sanctify::Auto
-
-2009-06-13  Jonathan Yu <frequency@cpan.org>
-
-	Initial commit of new module
-
-2009-06-13  Jonathan Yu <frequency@cpan.org>
-
-	Added Env-Sanctify-Auto
-
-;; Local Variables:
-;; coding: utf-8
-;; End:
+  + Initial release

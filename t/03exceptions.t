@@ -3,7 +3,7 @@
 # t/03exceptions.t
 #  Tests fast errors produced with obvious mistakes
 #
-# $Id: 03exceptions.t 8217 2009-07-25 22:35:54Z FREQUENCY@cpan.org $
+# $Id: 03exceptions.t 8622 2009-08-18 04:46:41Z FREQUENCY@cpan.org $
 
 use strict;
 use warnings;
